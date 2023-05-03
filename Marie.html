@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zugangscode für unser Zuhause</title>
+	<style>
+		body {
+			background-color: turquoise; /* Hintergrundfarbe in Türkis */
+			text-align: center; /* Alles zentrieren */
+			font-family: Arial, sans-serif; /* Schriftart festlegen */
+			color: white; /* Textfarbe in Weiß */
+			margin: 0; /* Entferne den Abstand um den Körper */
+		}
+		h1 {
+			margin-top: 50px; /* Abstand von oben einfügen */
+			font-size: 32px; /* Größere Schriftgröße */
+			font-weight: bold; /* Fettgedruckt */
+			text-transform: uppercase; /* In Großbuchstaben umwandeln */
+			letter-spacing: 2px; /* Zeichenabstand erhöhen */
+		}
+		button {
+			margin-top: 30px; /* Abstand zum Text hinzufügen */
+			background-color: white; /* Button-Hintergrundfarbe in Weiß */
+			border: none; /* Entferne den Rahmen um den Button */
+			padding: 10px; /* Innenabstand hinzufügen */
+			border-radius: 5px; /* Abgerundete Ecken */
+			font-size: 24px; /* Schriftgröße erhöhen */
+			font-weight: bold; /* Fettgedruckt */
+			text-transform: uppercase; /* In Großbuchstaben umwandeln */
+			color: turquoise; /* Textfarbe in Türkis */
+			box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); /* Schatten hinzufügen */
+		}
+		button:hover {
+			cursor: pointer; /* Zeiger ändern, wenn über Button gehalten wird */
+			background-color: rgba(255, 255, 255, 0.8); /* Leicht transparente Hintergrundfarbe bei Hover */
+			color: turquoise; /* Textfarbe in Türkis ändern */
+		}
+		p {
+			margin-top: 30px; /* Abstand hinzufügen */
+			font-size: 24px; /* Schriftgröße erhöhen */
+			font-weight: bold; /* Fettgedruckt */
+			text-transform: uppercase; /* In Großbuchstaben umwandeln */
+			letter-spacing: 2px; /* Zeichenabstand erhöhen */
+		}
+		.code {
+			font-size: 48px; /* Schriftgröße für den Code erhöhen */
+			margin-top: 50px; /* Abstand oben einfügen */
+		}
+	</style>
+</head>
+<body>
+	<h1>Meine liebe Marie,</h1>
+	<p>Ich, Alex, habe diese Webseite speziell für uns und unser gemeinsames Zuhause erstellt.</p>
+	<p>Um einen Code zu erstellen, der dich zu mir führt klicke auf folgenden Button:</p>
+	<button onclick="generateCode()">Marie, ich liebe dich von ganzem Herzen <3</button>
+	<p>Dein persönlicher Zugangscode für unser Zuhause lautet:</p>
+	<p class="code"><span
+</span></p>
+<p class="code"><span id="code"></span></p>
+
+<script>
+	function generateCode() {
+		let code = "";
+		for (let i = 0; i < 4; i++) {
+			code += Math.floor(Math.random() * 10);
+		}
+		document.getElementById("code").innerHTML = code;
+	}
+</script>
+<p class="code"><span id="code"></span></p>
+<p>Den Code wirst du nie vergessen, denn er erinnert an unseren Beginn, am 07.01.2022. (ich habe versucht eine Eselsbrücke zu erstellen für jeden zufällig generierten code mit Hilfe von Lebensereignissen die wir zusammen erlebt haben. Habe ich auf die schnelle nicht erfolgreich programmieren können.</p>
